@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avto zavarovanje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="progress-bar">
+        <div class="step active">
+            <p>ZAČETEK</p>
+        </div>
+        <div class="step active">
+            <p>POTREBE IN ZAHTEVE</p>
+        </div>
+        <div class="step">
+            <p>PODATKI</p>
+        </div>
+        <div class="step">
+            <p>POVZETEK</p>
+        </div>
+        <div class="step">
+            <p>PLAČILO</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1>Avto zavarovanje za moj avto</h1>
+        <p>Vnesi in preveri podatke o avtu</p>
+        <form>
+            <div class="form-group">
+                <label for="leto-rojstva">Leto rojstva</label>
+                <select id="leto-rojstva">
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="postna-stevilka">Poštna številka</label>
+                <select id="postna-stevilka">
+                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="model">Model</label>
+                <select id="model">
+                    <option>Izberi model</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tip">Tip</label>
+                <select id="tip">
+                    <option>Izberi tip</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="leto">Leto prve registracije</label>
+                <select id="leto">
+                    <option>Izberi leto iz seznama</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <a href="/wiz_kasko_obrazec/stran1/index.html">
+                    <button type="button" class="btn secondary">Nazaj</button>
+                </a>
+                <a href="">
+                    <button type="submit" class="btn primary">Naprej</button>
+                </a>
+            </div>
+        </form>
+
+        <div class="payment-info">
+            <p>Podatke, ki jih vnašaš na tem koraku, potrebujemo za pripravo informativnega izračuna...</p>
+            <div class="payment-options">
+                <img src="../slike/mastercard.png" alt="MasterCard">
+                <img src="../slike/visa.png" alt="Visa">
+                <img src="../slike/paypal.png" alt="PayPal">
+                <img src="../slike/diners.png" alt="Diners">
+                <img src="../slike/upn.png" alt="UPN">
+            </div>
+            <p class="contact-info">080 11 24 | info@wiz.si</p>
+        </div>
+    </div>
+</body>
+</html>
