@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avto Zavarovanje</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="step active">
+                ZAČETEK
+            </div>
+            <div class="step">
+                POTREBE IN ZAHTEVE
+            </div>
+            <div class="step">
+                PODATKI
+            </div>
+            <div class="step">
+                POVZETEK
+            </div>
+            <div class="step">
+                PLAČILO
+            </div>
+        </div>
+
+        <h1>Avto zavarovanje za moj avto</h1>
+        <p>Vnesi registrsko številko svojega osebnega avta. Če številke ne poznaš, klikni gumb PRESKOČI za ročni vnos podatkov. Informativni izračun pridobiš že pri 2. koraku in ga lahko tudi shraniš ali pa nadaljuješ postopek sklenitve. naredi justify alpa absolute left</p>
+
+        <div class="form">
+            <label for="registrska">Registrska številka</label>
+            <div class="input-group">
+                <select id="registrska" name="registrska">
+                    <option value="CE">CE</option>
+                    <option selected="selected" value="GO">GO</option>
+                    <option value="KK">KK</option>
+                    <option value="KP">KP</option>
+                    <option value="KR">KR</option>
+                    <option value="LJ">LJ</option>
+                    <option value="MB">MB</option>
+                    <option value="MS">MS</option>
+                    <option value="NM">NM</option>
+                    <option value="PO">PO</option>
+                    <option value="SG">SG</option>
+                </select>
+                <input type="text" placeholder="Vnesi številko">
+            </div>
+            <div class="button-group">
+                <a href="/wiz_kasko_obrazec/stran2/index.html">
+                    <button class="skip-btn">Preskoči vnos registrske</button>
+                </a>
+                <a href="/wiz_kasko_obrazec/stran2/index.html">
+                    <button class="next-btn">Naprej</button>
+                </a>
+            </div>
+        </div>
+
+        <p class="informative-text">Podatek, ki ga vneseš na tem koraku potrebujemo za pripravo informativnega izračuna in morebitne pomoči pri sklenitvi zavarovanja na podlagi tega informativnega izračuna. Več o obdelavi osebnih podatkov si lahko prebereš <a class ="barva" href="#">TUKAJ</a>.</p>
+
+        <div class="payment-options">
+            <img src="../slike/mastercard.png" alt="MasterCard">
+            <img src="../slike/visa.png" alt="Visa">
+            <img src="../slike/paypal.png" alt="PayPal">
+            <img src="../slike/diners.png" alt="Diners">
+            <img src="../slike/upn.png" alt="UPN">
+        </div>
+
+        <div class="contact-info">
+            <p>080 11 24 | <a href="mailto:info@wiz.si">info@wiz.si</a></p>
+        </div>
+    </div>
+</body>
+</html>
