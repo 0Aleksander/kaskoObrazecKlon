@@ -3,72 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avto Zavarovanje</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avto zavarovanje</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="progress-bar">
-            <div class="step active">
-                ZAČETEK
-            </div>
-            <div class="step">
-                POTREBE IN ZAHTEVE
-            </div>
-            <div class="step">
-                PODATKI
-            </div>
-            <div class="step">
-                POVZETEK
-            </div>
-            <div class="step">
-                PLAČILO
-            </div>
+    <div class="progress-bar">
+        <div class="step active">
+            <p>ZAČETEK</p>
         </div>
+        <div class="step">
+            <p>POTREBE IN ZAHTEVE</p>
+        </div>
+        <div class="step">
+            <p>PODATKI</p>
+        </div>
+        <div class="step">
+            <p>POVZETEK</p>
+        </div>
+        <div class="step">
+            <p>PLAČILO</p>
+        </div>
+    </div>
 
+    <div class="form-container">
         <h1>Avto zavarovanje za moj avto</h1>
-        <p>Vnesi registrsko številko svojega osebnega avta. Če številke ne poznaš, klikni gumb PRESKOČI za ročni vnos podatkov. Informativni izračun pridobiš že pri 2. koraku in ga lahko tudi shraniš ali pa nadaljuješ postopek sklenitve. naredi justify alpa absolute left</p>
-
-        <div class="form">
-            <label for="registrska">Registrska številka</label>
-            <div class="input-group">
-                <select id="registrska" name="registrska">
-                    <option value="CE">CE</option>
-                    <option selected="selected" value="GO">GO</option>
-                    <option value="KK">KK</option>
-                    <option value="KP">KP</option>
-                    <option value="KR">KR</option>
-                    <option value="LJ">LJ</option>
-                    <option value="MB">MB</option>
-                    <option value="MS">MS</option>
-                    <option value="NM">NM</option>
-                    <option value="PO">PO</option>
-                    <option value="SG">SG</option>
-                </select>
-                <input type="text" placeholder="Vnesi številko">
-            </div>
-            <div class="button-group">
-                <a href="stran2/index.html">
-                    <button class="skip-btn">Preskoči vnos registrske</button>
+        <p>Vnesi in preveri podatke o avtu</p>
+        <form>
+            <div class="form">
+                <label for="registrska">Registrska številka</label>
+                <div class="input-group">
+                    <select id="registrska" name="registrska">
+                        <option value="CE">CE</option>
+                        <option selected="selected" value="GO">GO</option>
+                        <option value="KK">KK</option>
+                        <option value="KP">KP</option>
+                        <option value="KR">KR</option>
+                        <option value="LJ">LJ</option>
+                        <option value="MB">MB</option>
+                        <option value="MS">MS</option>
+                        <option value="NM">NM</option>
+                        <option value="PO">PO</option>
+                        <option value="SG">SG</option>
+                    </select>
+                    <input type="text" placeholder="Vnesi številko">
+                </div>
+            <div class="buttons">
+                <a href="../index.html">
+                    <button type="button" class="btn secondary">Nazaj</button>
                 </a>
-                <a href="stran2/index.html">
-                    <button class="next-btn">Naprej</button>
+                <a href="../stran3/index.html">
+                    <button type="button" class="btn primary">Naprej</button>
                 </a>
             </div>
-        </div>
+        </form>
 
-        <p class="informative-text">Podatek, ki ga vneseš na tem koraku potrebujemo za pripravo informativnega izračuna in morebitne pomoči pri sklenitvi zavarovanja na podlagi tega informativnega izračuna. Več o obdelavi osebnih podatkov si lahko prebereš <a class ="barva" href="#">TUKAJ</a>.</p>
-
-        <div class="payment-options">
-            <img src="../slike/mastercard.png" alt="MasterCard">
-            <img src="../slike/visa.png" alt="Visa">
-            <img src="../slike/paypal.png" alt="PayPal">
-            <img src="../slike/diners.png" alt="Diners">
-            <img src="../slike/upn.png" alt="UPN">
-        </div>
-
-        <div class="contact-info">
-            <p>080 11 24 | <a href="mailto:info@wiz.si">info@wiz.si</a></p>
+        <div class="payment-info">
+            <p>Podatek, ki ga vneseš na tem koraku potrebujemo za pripravo informativnega izračuna in morebitne pomoči pri sklenitvi zavarovanja na podlagi tega informativnega izračuna. Več o obdelavi osebnih podatkov si lahko prebereš TUKAJ</p>
+            <div class="payment-options">
+                <img src="../slike/mastercard.png" alt="MasterCard">
+                <img src="../slike/visa.png" alt="Visa">
+                <img src="../slike/paypal.png" alt="PayPal">
+                <img src="../slike/diners.png" alt="Diners">
+                <img src="../slike/upn.png" alt="UPN">
+            </div>
+            <p class="contact-info">080 11 24 | info@wiz.si</p>
         </div>
     </div>
 </body>

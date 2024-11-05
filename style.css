@@ -1,26 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 
-.container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    height: 70%;
-    width: 50%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
 .progress-bar {
     display: flex;
@@ -88,100 +75,98 @@ body {
     color: #888;
 }
 
-h1 {
-    font-size: 28px;
+.form-container {
+    background-color: #fff;
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.form-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.form-container p {
+    font-size: 16px;
+    color: #666;
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
 .form label {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .input-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
     margin-bottom: 20px;
+    
 }
 
-.input-group select,
-.input-group input {
-    padding: 12px;
-    margin-right: 10px;
+.input-group select, .input-group input[type="text"] {
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 150px;
+    font-size: 14px;
+    width: 50%;
 }
 
-.button-group {
+.buttons {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.skip-btn,
-.next-btn {
-    background-color: #49BDBF;
-    color: white;
+.buttons .btn {
     padding: 10px 20px;
+    font-size: 14px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.skip-btn {
-    background-color: #ccc;
+.buttons .btn.primary {
+    background-color: #00bfbf;
+    color: white;
 }
 
-.skip-btn:hover,
-.next-btn:hover {
-    background-color: #49BDBF;
+.buttons .btn.secondary {
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-.informative-text {
+.buttons .btn:hover {
+    opacity: 0.9;
+}
+
+.payment-info {
     font-size: 14px;
-    color: #777;
-    text-align: center;
-    margin-bottom: 30px;
+    color: #666;
+    margin-top: 20px;
 }
 
-.barva {
-    color: #49BDBF;
-}
-
-.payment-options {
+.payment-info .payment-options {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.payment-options img {
-    margin: 0 10px;
+.payment-info img {
+    width: 30px;
     height: 30px;
 }
 
 .contact-info {
-    text-align: center;
     font-size: 14px;
-    color: #777;
-}
-
-.contact-info a {
-    color: #49BDBF;
-    text-decoration: none;
+    color: #333;
+    margin-top: 15px;
 }
