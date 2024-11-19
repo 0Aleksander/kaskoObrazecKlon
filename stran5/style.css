@@ -163,3 +163,27 @@ select {
     color: #28b5b5;
     font-weight: bold;
 }
+
+.swal2-title {
+    color: #28b5b5; /* Spremeni barvo naslova (npr. oranžno-rdeča) */
+    font-size: 24px; /* Po želji prilagodite velikost pisave */
+}
+
+.swal2-popup {
+    background-color: #f0f8ff; /* Spremeni ozadje dialoga (npr. svetlo modro) */
+    border: 2px solid #28b5b5; /* Doda obrobo */
+    border-radius: 15px; /* Zaobljeni robovi */
+}
+
+.swal2-confirm {
+    background-color: #28b5b5; /* Spremeni barvo gumba "Potrdi" */
+    color: white; /* Spremeni barvo besedila gumba */
+    border: none; /* Odstrani obrobo */
+}
+
+.swal2-cancel {
+    background-color: #f44336; /* Spremeni barvo gumba "Prekliči" */
+    color: white;
+    border: none;
+}
+
