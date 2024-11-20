@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 0;
     position: relative;
     counter-reset: step;
@@ -169,4 +169,49 @@ body {
     font-size: 14px;
     color: #00bfbf;
     margin-top: 15px;
+}
+
+p.contact-info{
+    color: #00bfbf;
+}
+
+/* SweetAlert prilagoditve */
+.custom-popup {
+    background-color: #f9f9f9; /* Svetlo sivo ozadje */
+    border-radius: 10px; /* Zaobljeni robovi */
+    border: 1px solid #00bfbf; /* Tanka obroba */
+    padding: 20px;
+}
+
+.custom-popup h2 {
+    color: #00bfbf; /* Temno siva barva naslova */
+    font-size: 24px; /* Velikost pisave naslova */
+    margin-bottom: 15px;
+}
+
+.custom-popup p {
+    color: #555; /* Nevtralna barva besedila */
+    font-size: 16px; /* Velikost pisave za besedilo */
+}
+
+.custom-confirm-btn {
+    background-color: #00bfbf; /* Zelena barva gumba */
+    color: #fff; /* Bela barva besedila na gumbu */
+    border: 2px solid #28b5b5; /* Brez obrobe */
+    border-radius: 5px; /* Zaobljeni robovi gumba */
+    padding: 10px 20px; /* Notranji odmiki gumba */
+    font-size: 16px; /* Velikost pisave gumba */
+    cursor: pointer;
+}
+
+.custom-confirm-btn:hover {
+    background-color: #00bfbf; /* Temnejša zelena na hover */
+}
+
+.swal2-popup {
+    font-family: "Arial", sans-serif; /* Družina pisav */
+}
+
+.swal2-close {
+    color: #999; /* Barva X gumba za zapiranje */
 }
