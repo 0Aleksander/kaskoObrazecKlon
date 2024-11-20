@@ -7,6 +7,7 @@
     <title>Avto zavarovanje</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="../slike/wiz2.jpg" type="image/jpg">
 </head>
 <body>
     <div class="progress-bar">
@@ -32,7 +33,7 @@
         <p>Vnesi in preveri podatke o avtu</p>
         <form>
             <div class="form-group">
-                <label for="znamka"><H3>Znamka</H3></label>
+                <label for="znamka"><h3>Znamka</h3></label>
                 <select id="znamka">
                     <option>Izberi znamko</option>
                     <option value="400001108" data-min-year="2021">AIWAYS</option>
@@ -101,7 +102,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="letnik">Letnik</label>
+                <label for="letnik"><h3>Letnik</h3></label>
                 <select id="letnik">
                     <option>Izberi letnik vozila</option>
                     <option value="2024">2024</option>
@@ -123,7 +124,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="model">Model</label>
+                <label for="model"><h3>Model</h3></label>
                 <select id="model">
                     <option>Izberi model</option>
                     <option value="Model1">Model1</option>
@@ -133,7 +134,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="tip">Tip</label>
+                <label for="tip"><h3>Tip</h3></label>
                 <select id="tip">
                     <option>Izberi tip</option>
                     <option value="Mocnejsi">Močnejši</option>
@@ -142,7 +143,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="leto">Leto prve registracije</label>
+                <label for="leto"><h3>Leto prve registracije</h3></label>
                 <select id="leto">
                     <option>Izberi leto iz seznama</option>
                     <option value="2024">2024</option>
@@ -193,26 +194,25 @@
 
     <script>
 
-document.getElementById("info-dot").addEventListener("click", function () {
-    Swal.fire({
-        title: 'Credits',
-        text: 'Obrazec je ustvaril Aleksander Laketa 4. Ra',
-        icon: 'info',
-        confirmButtonText: 'Zapri',
-        customClass: {
-            confirmButton: 'custom-inline-style'
-        }
-    });
+        document.getElementById("info-dot").addEventListener("click", function () {
+            Swal.fire({
+                title: 'Credits',
+                text: 'Obrazec je ustvaril Aleksander Laketa 4. Ra',
+                icon: 'info',
+                confirmButtonText: 'Zapri',
+                customClass: {
+                    confirmButton: 'custom-inline-style'
+                }
+            });
 
-    // Določi barvo neposredno z inline slogom
-    document.querySelector('.custom-inline-style').style.backgroundColor = '#00bfbf';
-    document.querySelector('.custom-inline-style').style.color = 'white';
-    document.querySelector('.custom-inline-style').style.border = 'none';
-    document.querySelector('.custom-inline-style').style.padding = '10px 20px';
-    document.querySelector('.custom-inline-style').style.borderRadius = '5px';
-    document.querySelector('.custom-inline-style').style.fontSize = '16px';
-});
-
+            // Določi barvo neposredno z inline slogom
+            document.querySelector('.custom-inline-style').style.backgroundColor = '#00bfbf';
+            document.querySelector('.custom-inline-style').style.color = 'white';
+            document.querySelector('.custom-inline-style').style.border = 'none';
+            document.querySelector('.custom-inline-style').style.padding = '10px 20px';
+            document.querySelector('.custom-inline-style').style.borderRadius = '5px';
+            document.querySelector('.custom-inline-style').style.fontSize = '16px';
+        });
 
     </script>
 </body>

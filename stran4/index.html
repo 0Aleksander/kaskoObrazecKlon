@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Avto zavarovanje</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../slike/wiz2.jpg" type="image/jpg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <div class="progress-bar">
@@ -55,8 +57,35 @@
                 <img src="../slike/flik.png" alt="Flik">
                 <img src="../slike/upn.png" alt="UPN">
             </div>
-            <p class="contact-info">080 11 24 | info@wiz.si</p>
+            <p class="contact-info">
+                <span id="info-dot" style="cursor: pointer;">i</span>nfo@wiz.si
+            </p>
         </div>
     </div>
+
+    <script>
+
+        document.getElementById("info-dot").addEventListener("click", function () {
+            Swal.fire({
+                title: 'Credits',
+                text: 'Obrazec je ustvaril Aleksander Laketa 4. Ra',
+                icon: 'info',
+                confirmButtonText: 'Zapri',
+                customClass: {
+                    confirmButton: 'custom-inline-style'
+                }
+            });
+
+            // Določi barvo neposredno z inline slogom
+            document.querySelector('.custom-inline-style').style.backgroundColor = '#00bfbf';
+            document.querySelector('.custom-inline-style').style.color = 'white';
+            document.querySelector('.custom-inline-style').style.border = 'none';
+            document.querySelector('.custom-inline-style').style.padding = '10px 20px';
+            document.querySelector('.custom-inline-style').style.borderRadius = '5px';
+            document.querySelector('.custom-inline-style').style.fontSize = '16px';
+        });
+
+    </script>
+
 </body>
 </html>

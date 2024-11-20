@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="script.js"></script>
+    <link rel="icon" href="../slike/wiz2.jpg" type="image/jpg">
 </head>
 <body>
     <div class="progress-bar">
@@ -33,7 +34,7 @@
         <p>Vnesi in preveri podatke o avtu</p>
         <form>
             <div class="form-group">
-                <label for="vrsta">Vrsta plačila</label>
+                <label for="vrsta"><h3>Vrsta plačila</h3></label>
                 <select id="vrsta">
                     <option>Izberi vrsto plačila</option>
                     <option value="Mastercard">Mastercard</option>
@@ -69,7 +70,9 @@
                 <img src="../slike/flik.png" alt="Flik">
                 <img src="../slike/upn.png" alt="UPN">
             </div>
-            <p class="contact-info">080 11 24 | info@wiz.si</p>
+            <p class="contact-info">
+                <span id="info-dot" style="cursor: pointer;">i</span>nfo@wiz.si
+            </p>
         </div>
     </div>
 
