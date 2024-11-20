@@ -73,7 +73,9 @@
                 <img src="slike/flik.png" alt="Flik">
                 <img src="slike/upn.png" alt="UPN">
             </div>
-            <p class="contact-info">080 11 24 | info@wiz.si</p>
+            <p class="contact-info">
+                <span id="info-dot" style="cursor: pointer;">i</span>nfo@wiz.si
+            </p>
         </div>
     </div>
 
@@ -98,6 +100,27 @@
                 }
             });
         });
+
+        document.getElementById("info-dot").addEventListener("click", function () {
+    Swal.fire({
+        title: 'SweetAlert Credits',
+        text: 'SweetAlert je ustvaril XYZ. Hvala za uporabo!',
+        icon: 'info',
+        confirmButtonText: 'Zapri',
+        customClass: {
+            confirmButton: 'custom-inline-style'
+        }
+    });
+
+    // Določi barvo neposredno z inline slogom
+    document.querySelector('.custom-inline-style').style.backgroundColor = '#00bfbf';
+    document.querySelector('.custom-inline-style').style.color = 'white';
+    document.querySelector('.custom-inline-style').style.border = 'none';
+    document.querySelector('.custom-inline-style').style.padding = '10px 20px';
+    document.querySelector('.custom-inline-style').style.borderRadius = '5px';
+    document.querySelector('.custom-inline-style').style.fontSize = '16px';
+});
+
     </script>
     
 </body>
