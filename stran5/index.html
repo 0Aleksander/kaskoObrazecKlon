@@ -79,28 +79,31 @@
     <script>
         // Dodajanje funkcionalnosti SweetAlert na gumb "Zaključi"
         document.getElementById("zakljuci").addEventListener("click", function(event) {
-    event.preventDefault(); // Prepreči morebitno ponovno nalaganje strani
-    Swal.fire({
-        title: 'Zaključek',
-        text: 'Ali ste prepričani, da želite zaključiti postopek?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonText: 'Da, zaključim',
-        cancelButtonText: 'Prekliči',
-        allowOutsideClick: false, // Onemogoči zapiranje ob kliku izven dialoga
-        allowEscapeKey: false    // Onemogoči zapiranje z ESC tipko
-    }).then((result) => {
-        if (result.isConfirmed) {
+            event.preventDefault(); // Prepreči morebitno ponovno nalaganje strani
             Swal.fire({
-                title: 'Zaključeno!',
-                text: 'Postopek je bil uspešno zaključen.',
-                icon: 'success',
-                timer: 3000, // Dialog se zapre po 3 sekundah
-                timerProgressBar: true
+                title: 'Zaključek',
+                text: 'Ali ste prepričani, da želite zaključiti postopek?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Da, zaključim',
+                cancelButtonText: 'Prekliči',
+                allowOutsideClick: false, // Onemogoči zapiranje ob kliku izven dialoga
+                allowEscapeKey: false    // Onemogoči zapiranje z ESC tipko
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: 'Zaključeno!',
+                        text: 'Postopek je bil uspešno zaključen.',
+                        icon: 'success',
+                        timer: 3000, // Dialog se zapre po 3 sekundah
+                        timerProgressBar: true
+                    }).then(() => {
+                        // Preusmeritev po 3 sekundah
+                        window.location.href = "../index.html";
+                    });
+                }
             });
-        }
-    });
-});
+        });
     </script>
 </body>
 </html>
